@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idutochkin.run18.carpoling.FilterActivity">
+
+    <TextView
+        android:id="@+id/header_cyty_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Город отправления"
+        android:textSize="16sp" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerCityFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/header_cyty_from" />
+
+    <TextView
+        android:id="@+id/header_point_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerCityFrom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Точка отправления"
+        android:textSize="14sp" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerPointFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/header_point_from" />
+
+    <TextView
+        android:id="@+id/header_cyty_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerPointFrom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:text="Город назначения"
+        android:textSize="16sp" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerCityTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/header_cyty_to" />
+
+    <TextView
+        android:id="@+id/header_point_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerCityTo"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Точка назначения"
+        android:textSize="14sp" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerPointTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/header_point_to" />
+
+</RelativeLayout>
